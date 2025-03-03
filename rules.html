@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Rules</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showRules() {
+            document.getElementById("rulesModal").style.display = "block";
+        }
+        function closeRules() {
+            document.getElementById("rulesModal").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Free Fire Tournament Rules</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="schedule.html">Live Matches</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button onclick="showRules()">View Rules</button>
+
+        <div id="rulesModal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:20px; border:1px solid black;">
+            <h2>Tournament Rules</h2>
+            <ul>
+                <li>Each player must register with a valid Free Fire ID.</li>
+                <li>Hacking or cheating will result in an instant ban.</li>
+                <li>Teams must join the match room 10 minutes before the start time.</li>
+                <li>The decision of the organizers will be final.</li>
+            </ul>
+            <button onclick="closeRules()">Close</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Free Fire Tournament. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
